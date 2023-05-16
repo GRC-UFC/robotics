@@ -72,6 +72,7 @@ void calculoPID()
   
   Ideias: Utilizar bits para melhorar a representacao
 */
+
 void lerSensores() {
   int sensor_direita = digitalRead(SENSOR_0);
   int sensor_centro = digitalRead(SENSOR_1);
@@ -102,10 +103,10 @@ void controleMotor(){
     velDir = veloA;
   }
   
-  digitalWrite(INPUT1, LOW);
-  digitalWrite(INPUT2, HIGH);
-  digitalWrite(INPUT3, LOW);
-  digitalWrite(INPUT4, HIGH); //verificar se o robo nao ta andando ao contrario
+  digitalWrite(INPUT1, HIGH);
+  digitalWrite(INPUT2, LOW);
+  digitalWrite(INPUT3, HIGH);
+  digitalWrite(INPUT4, LOW); //verificar se o robo nao ta andando ao contrario
   analogWrite(ENABLE1, velEsq);
   analogWrite(ENABLE2, velDir);
 
