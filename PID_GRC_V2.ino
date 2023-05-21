@@ -89,6 +89,7 @@ void calculaErro() {
   else if (sensores == "100") erro = -2;
   else if (sensores == "011") erro = 1;
   else if (sensores == "001") erro = 2;
+   //ainda nao foi considerado pra 000**
 }
 
 void controleMotor(){
