@@ -23,12 +23,12 @@
 
 //----- CONSTANTES -----
 String sensores = ""; //Leitura de todos os sensores
-int veloA = 255; //atentar as velocidades base
-int veloB = 255; //velocidade base dos motores PWM
+int veloA = 150; //atentar as velocidades base
+int veloB = 150; //velocidade base dos motores PWM
 
 int Ki = 0; //para nao acumularmos tanto erro
 int Kp = 35; //valor padrao pra nos
-int Kd = 0; //ir ajustando ateh ficar bom
+int Kd = 35; //ir ajustando ateh ficar bom
 
 int P =  0,I = 0, D = 0, PID = 0; //inicializando as variaveis que vao sofrer variacao conforme o erro
 int velEsq = 0, velDir = 0; //estas sao as variaveis que irao fazer os motores PWM se moverem de fato
@@ -89,6 +89,7 @@ void calculaErro() {
   else if (sensores == "100") erro = -2;
   else if (sensores == "011") erro = 1;
   else if (sensores == "001") erro = 2;
+  else if (sensores == "000") erro = 0;
    //ainda nao foi considerado pra 000**
 }
 
