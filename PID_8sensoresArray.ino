@@ -1,7 +1,7 @@
 //Esta eh uma implementacao de controle PID para o carrinho seguidor de linha 'V2' do GRCFC
 //Autor: Luis Ferlim - Engenharia de Computacao - UFC - GRC - 2023
 //co-autor: Bruno Said - Engenharia de Computacao - UFC - GRC - 2023
-
+// implemmentar a biblioteca QTRsensors.h
 //formula PID: Kp * P + Ki * I + Kd * D
 // obs: PID continuo: Kp* e[k] + Ki *sum(e[n]) + Kd *(e[k] - e[k-1])
 
